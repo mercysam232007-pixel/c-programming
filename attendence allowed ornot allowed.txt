@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+int x;
+scanf("%d",&x);
+if(x>75)
+{
+    printf("allowed");
+}
+else
+{
+    printf("not allowed");
+}
+return 0;
+}
