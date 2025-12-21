@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+int unit;
+scanf("%d",&unit);
+if(unit<=100)
+{
+    printf("%d",unit*1);
+}
+else
+{
+    printf("%d",unit*2);
+}
+return 0;
+}
