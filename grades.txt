@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+int a,b,c;
+scanf("%d,%d,%d",&a,&b,&c);
+if(a>=95)
+{
+    printf("grade A");
+}
+else if(b>=75)
+{
+    printf("grade B");
+}
+else if(c>=50)
+{
+    printf("grade c");
+}
+else
+{
+    printf("fail");
+}    
+return 0;
+}
