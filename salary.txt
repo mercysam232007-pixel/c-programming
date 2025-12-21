@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+int salary;
+scanf("%d",&salary);
+if(salary>=20000)
+{
+    printf("%d",salary+2000);
+}
+else
+{
+    printf("%d",salary+1000);
+}
+return 0;
+}
