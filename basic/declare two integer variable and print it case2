@@ -1,0 +1,5 @@
+#include<stdio.h>
+int main() {
+    int m=20,n=40;
+    printf("%d %d",m,n);
+}
