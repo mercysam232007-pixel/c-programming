@@ -1,0 +1,5 @@
+#include<stdio.h>
+int main() {
+    int m=5,n=15;
+    printf("%d %d",m,n);
+}
