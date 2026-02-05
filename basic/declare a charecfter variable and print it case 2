@@ -1,0 +1,5 @@
+#include<stdio.h>
+int main() {
+    char n = 'B';
+    printf("%c",n);
+}
