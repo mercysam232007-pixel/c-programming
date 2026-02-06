@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+
+    int x = a, y = a;   // copy original value
+
+    x /= b;   // division
+    y %= b;   // modulus
+
+    printf("%d %d", x, y);
+
+    return 0;
+}
