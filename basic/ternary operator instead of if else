@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int A, B;
+    scanf("%d %d", &A, &B);
+
+    int max = (A > B) ? printf("A is bigger") :printf("B is bigger");
+    printf("%d", max);
+
+    return 0;
+}
