@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main() {
+    printf("====MERCY's CALCULATOR====\n");
+    printf("==========================\n");
+    printf("Enter the operation you wanna do()\n");
+    printf("Addition(+)\n");
+    printf("Subtraction(-)\n");
+    printf("Multiplication(*)\n");
+    printf("Division(/)\n");
+    char operation;
+    scanf("%c", &operation);
+    float num1,num2;
+    printf("Enter the first number and second number\n");
+    scanf("%2f%2f",&num1,&num2);
+    switch(operation) {
+        case '+':
+            printf("%.2f + %.2f = %.2f",num1,num2,num1+num2);
+            break;
+        case '-':
+            printf("%.2f - %.2f = %.2f",num1,num2,num1-num2);
+            break;
+        case '*':
+            printf("%.2f * %.2f = %.2f",num1,num2,num1*num2);
+            break;
+        case '/':
+            if (num2 == 0){
+                printf("Error! Division by zero");
+            }
+            else {
+                printf("%.2f / %.2f = %.2f",num1,num2,num1/num2);
+            }
+            break;
+         default:
+            printf("Error! Invalid option");
+
+    }
+
+
+
+}
