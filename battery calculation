@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main() {
+    int battery;
+    printf("Enter your battery charge: ");
+    scanf("%d",&battery);
+    if (battery > 20 )
+        printf("Low battery");
+    else
+        printf("battery ok");
+}
