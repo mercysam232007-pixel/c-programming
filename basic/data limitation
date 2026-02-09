@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main() {
+    int data;
+    printf("Enter the data: ");
+    scanf("%f",&data);
+    if (data<2.0)
+        printf("data is in limit",data);
+    else
+        printf("data is not in limit",data);
+}
