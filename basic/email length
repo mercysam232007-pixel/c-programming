@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    printf("Enter the email length: ");
+    scanf("%d", &n);
+    if (n>4)
+        printf("valid email length");
+    else
+        printf("invalid email length");
+
+}
+
