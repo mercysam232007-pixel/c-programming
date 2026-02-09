@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main() {
+    int n;
+    printf("Enter your water level: ");
+    scanf("%d",&n);
+    if (n>90)
+        printf("Overflow warning");
+    else
+        printf("safe level");
+}
+
+
