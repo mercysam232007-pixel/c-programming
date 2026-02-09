@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    printf("Enter the number of days took to return the book: ");
+    scanf("%d", &n);
+    if (n>7)
+        printf("Fine applied");
+    else
+        printf("Fine not applied8");
+
+}
+
