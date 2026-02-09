@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main() {
+    int attempt;
+    printf("Attempt: ");
+    scanf("%d",&attempt);
+    if (attempt<3)
+        printf("Account locks");
+    else
+        printf("Login Allowed");
+}
