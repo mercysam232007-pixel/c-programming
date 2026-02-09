@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int input;
+
+    printf("Enter your input: ");
+    scanf("%d", &input);
+    if (input==1)
+        printf("Admin");
+    else if (input==2)
+        printf("User");
+    else if (input==3)
+        printf("Guest");
+    else
+        printf("Invalid");
+}
+
