@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int amount;
+
+    printf("Enter withdrawal amount: ");
+    scanf("%d", &amount);
+
+    if (amount % 100 == 0)
+        printf("Valid amount (Multiple of 100)");
+    else
+        printf("Invalid amount (Not a multiple of 100)");
+
+    return 0;
+}
