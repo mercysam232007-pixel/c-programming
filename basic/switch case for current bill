@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main() {
+    int connectionType, units;
+    float bill;
+
+    printf("Enter the connection type: ");
+    scanf("%d", &connectionType);
+    printf("Enter the units: ");
+    scanf("%d", &units);
+
+    switch (connectionType) {
+
+        case 1:   // Domestic
+            if (units <= 100) {
+                bill = units * 3;
+            }
+            else {
+                bill = (100 * 3) + ((units - 100) * 5);
+            }
+
+            // Subsidy for Domestic
+            bill = bill - 80;
+            break;
+
+        case 2:   // Commercial
+            if (units <= 100) {
+                bill = units * 7;
+            }
+            else {
+                bill = (100 * 7) + ((units - 100) * 10);
+            }
+            break;
+
+        default:
+            printf("Invalid Connection Type");
+            return 0;
+    }
+
+    printf("Bill ₹%.0f", bill);
+
+    return 0;
+}
