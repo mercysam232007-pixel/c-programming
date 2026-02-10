@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main(){
+    int c;
+    scanf("%d",&case);
+    switch(case){
+        case 1:
+            int amount=199;
+            int method;
+            scanf("%d",&method);
+            if(method==11||method==12){
+                printf(" UPI %d",amount-20);
+            }else{
+                printf(" WALLET %d NO CASHBACK",amount);
+            }
+            break;
+        case 2:
+            int amount=399;
+            int method;
+            scanf("%d",&method);
+            switch(method){
+                case 11:
+
+                    break;
+                case 12:
+                    printf(" CARD %d",amount-20);
+                    break;
+                case 13:
+                    printf(" WALLET %d NO CASHBACK",amount);
+                    break;
+            }
+            break;
+
+    }
+    return 0;
+}
