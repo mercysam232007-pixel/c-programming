@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main() {
+    int code,experience,salary;
+    printf("Enter the code: ");
+    scanf("%d",&code);
+    printf("Enter the experience:");
+    scanf("%d",&experience);
+
+    switch (code) {
+        case 1://code
+            if (code==1)
+                printf("50000");
+            else
+                printf("35000");
+                break;
+        case 2://experience
+            if (experience>=3)
+                (salary=5000*experience);
+            printf("The salary is: %d",salary);
+            break;
+        default:
+            printf("Invalid");
+    }
+}
+
+
+
+
