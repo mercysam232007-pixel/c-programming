@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main() {
+    int course,category,regular,scholarship;
+    printf("Enter the course: ");
+    scanf("%d",&course);
+    printf("Enter the category: ");
+    scanf("%ch",&category);
+    switch(course) {
+        case 1:
+            if (category == regular)
+                printf("5000");
+                else
+                printf("3000");
+                break;
+        case 2:
+            if (category == regular)
+                printf("9000");
+            else
+                printf("7000");
+            break;
+        default:
+            printf("Invalid course");
+    }
+}
