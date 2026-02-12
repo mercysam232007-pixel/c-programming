@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main() {
+    int plantype;
+    float data;
+    printf("Enter the plantype:");
+    scanf("%d",&plantype);
+    printf("Enter the data used:");
+    scanf("%f",&data);
+
+    switch (plantype) {
+        case 1:
+        if (data <= 1) {
+            printf("Normal Speed");
+        }
+        else {
+            printf("Speed reduced");
+        }
+        break;
+        case 2:
+        if (data<=2)
+            printf("Normal Speed");
+        else
+            printf("Speed reduced");
+        break;
+        printf("The amount of data used is %f",data);
+
+    }
+}
