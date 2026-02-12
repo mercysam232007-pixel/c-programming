@@ -1,0 +1,25 @@
+#include<Stdio.h>
+int main() {
+    int loantype,score;
+    printf("Enter the type of loan: ");
+    scanf("%d",&loantype);
+    printf("Enter the crdit score: ");
+    scanf("%d",&score);
+    switch(loantype) {
+        case 1:
+            if (score>=700)
+                printf("Approved");3
+            else if (score<=650&&score>700)
+                printf("Mannual Review");
+            break;
+        case 2:
+            if (score>=700)
+                printf("Approved");
+            else if (score<700)
+                printf("Rejected");
+            break;
+            default:
+            printf("Wrong type");
+    }
+
+}
