@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int marks, attendance;
+    printf("Enter the marks: ");
+    scanf("%d", &marks);
+    printf("Enter the attendance: ");
+    scanf("%d", &attendance);
+
+    switch (attendance < 75) {
+        case 1:
+            printf("Fail");
+            break;
+
+        case 0:
+            switch (marks / 10) {
+            case 1:
+                    if (marks>=75)
+                        printf("Distinction");
+                    else if (marks>=50&&marks>75)
+                        printf("Pass");
+                    break;
+
+            default:
+                    printf("Fail");
+            }
+            break;
+    }
+
+    return 0;
+}
