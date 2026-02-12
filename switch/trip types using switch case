@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main() {
+    int vehicle,trip;
+    int rupees=0;
+    printf("Enter the vehicle type: ");
+    scanf("%d",&vehicle);
+    printf("Enter the trip type: ");
+    scanf("%d",&trip);
+    switch (trip) {
+        case 1:
+            if (trip == 1)
+                printf("rupees 100");
+            else
+                printf("rupees 800");
+
+            break;
+        case 2:
+            if (trip == 2) {
+                rupees = 240 * trip;
+            }
+            else {
+                printf("No discount or pass available\n");
+                rupees = 0;
+            }
+
+            printf("The total rupees is: %d", rupees);
+            break;
+
+    }
+    return 0;
+}
