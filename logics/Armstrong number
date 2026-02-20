@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<math.h>
+int main() {
+    int n,copy,sum=0,digit=0;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    copy=n;
+    while(copy!=0) {
+        copy=copy/10;
+        digit++;
+    }
+    copy=n;
+    while(copy!=0) {
+        sum=sum+pow((copy%10),digit);
+        copy=copy/10;
+    }
+    if (n==sum)
+        printf("Armstrong number");
+    else
+            printf("not Armstrong number");
+}
