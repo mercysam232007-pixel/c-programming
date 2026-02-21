@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main() {
+    int n,sum=0,pro=1,rem=0;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+
+    while (n!=0) {           //n=1124                    112                       11              1
+        rem=n%10;            //rem=1124%10=4             rem=112%10=2              rem=11%10=1     rem=1%10=0
+        sum=sum+rem;        //sum=0+4=4                  sum=4+2=6                 sum=6+1=7       sum=7+1=8
+        pro=pro*rem;        //pro=1*4=4                  pro=4*2=8                 pro=8*1=8       pro=8*1=8
+        n=n/10;             //n=1124/10=112              //n=112/10=11             n=11/10=1       n=1/10=0
+    }
+    if (sum==pro)
+        printf("The number is spy number");
+    else
+        printf("The number is not a spy number");
+}
