@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main() {
+    int n,temp,rem=0,rev=0;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    temp=n;
+    while(temp!=0) {             // n=121            n=12                n=1
+        rem=temp%10;                //rem=121%10=1      rem=12%10=2         rem=1%10=0
+        rev=rev*10+rem;          //rev=0*10+1=1      rev=1*10+2=20       rev=0*10+1=1
+        temp=temp/10;                  //n=121/10=12       n=12/10=1           n=1/10=0
+    }
+    printf("%d",rev);
+    if(temp=rev)
+        printf("Pallindrom");
+    else
+        printf("Not pallindrom");
+}
