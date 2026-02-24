@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main() {
+    int a,b,lcm=0;
+    int i=0;
+    printf("Enter 2 numbers\n");
+    scanf("%d %d",&a,&b);
+    for (i=1;i<=a*b;i++) {
+        if (i%a==0 && i%b==0)
+            lcm=i;
+    }
+    printf("the lcm is %d",lcm);
+}
