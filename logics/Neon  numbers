@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main() {
+    int n,sq,sum=0;             //n=9
+    printf("Enter the number : ");
+    scanf("%d",&n);
+    sq=n*n;                     //sq=9*9=81
+    while (sq!=0) {
+        sum=sum+(sq%10);        //0+1=1
+        sq=sq/10;               //sq=81/10=8
+    }
+    if (sum==n)
+        printf("Neon number");
+    else
+        printf("Not Neon Number");
+}
