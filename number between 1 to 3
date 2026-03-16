@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    printf("Enter a number between 1 and 3: ");
+    scanf("%d", &num);
+
+    switch(num) {
+        case 1:
+            printf("You entered One");
+            break;
+
+        case 2:
+            printf("You entered Two");
+            break;
+
+        case 3:
+            printf("You entered Three");
+            break;
+
+        default:
+            printf("Invalid number");
+    }
+
+    return 0;
+}
